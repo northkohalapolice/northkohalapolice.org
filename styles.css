@@ -650,4 +650,41 @@ img[src="assets/BREVO signup QR Code.png"] {
     width: 95px !important;
     height: 95px !important;
   }
+}/* MINOR CARD CLEANUP */
+
+/* Remove the phone and direction-dot icons */
+.non-emergency-card .button-icon,
+.station-card .button-icon {
+  display: none !important;
+}
+
+/* Allow the two right-side cards to shrink to their content */
+.station-card,
+.officer-card {
+  align-self: start !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+/* Tighten the police-station card */
+.station-card {
+  justify-content: flex-start !important;
+}
+
+.station-card .centered-content {
+  height: auto !important;
+  justify-content: flex-start !important;
+}
+
+.station-card .action-button {
+  margin-top: 18px !important;
+}
+
+/* Remove the large gap above the email button */
+.officer-card {
+  justify-content: flex-start !important;
+}
+
+.officer-button {
+  margin-top: 22px !important;
 }
