@@ -687,4 +687,28 @@ img[src="assets/BREVO signup QR Code.png"] {
 
 .officer-button {
   margin-top: 22px !important;
+}/* INDEPENDENT CARD HEIGHTS */
+
+.information-grid {
+  align-items: start !important;
+}
+
+.information-grid > article:nth-child(2),
+.information-grid > article:nth-child(4) {
+  align-self: start !important;
+  height: fit-content !important;
+  min-height: 0 !important;
+}
+
+.information-grid > article:nth-child(2) .centered-content {
+  height: auto !important;
+  justify-content: flex-start !important;
+}
+
+.information-grid > article:nth-child(4) {
+  justify-content: flex-start !important;
+}
+
+.information-grid > article:nth-child(4) .officer-button {
+  margin-top: 24px !important;
 }
