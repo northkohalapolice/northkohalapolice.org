@@ -731,4 +731,24 @@ img[src="assets/BREVO signup QR Code.png"] {
 .newsletter-card {
   grid-column: 2;
   grid-row: 2;
+}/* FINAL CARD ORDER — KEEP ACTIVE ON MOBILE */
+
+.non-emergency-card {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+}
+
+.station-card {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+}
+
+.officer-card {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+}
+
+.newsletter-card {
+  grid-column: 2 !important;
+  grid-row: 2 !important;
 }
