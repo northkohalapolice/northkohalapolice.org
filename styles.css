@@ -711,4 +711,24 @@ img[src="assets/BREVO signup QR Code.png"] {
 
 .information-grid > article:nth-child(4) .officer-button {
   margin-top: 24px !important;
+}/* REORDER CARDS INTO TWO VERTICAL COLUMNS */
+
+.non-emergency-card {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.officer-card {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.station-card {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.newsletter-card {
+  grid-column: 2;
+  grid-row: 2;
 }
