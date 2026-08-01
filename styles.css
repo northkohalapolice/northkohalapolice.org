@@ -787,7 +787,7 @@ img[src="assets/BREVO signup QR Code.png"] {
 
 /* Buttons */
 .action-button{
-    min-height:52px !important;
+    min-height:46px !important;
     border-radius:14px !important;
 }
 
@@ -830,4 +830,10 @@ img[src="assets/BREVO signup QR Code.png"] {
 .footer-disclaimer{
     margin-top:8px !important;
     line-height:1.45 !important;
+}
+
+.station-address{
+    max-width:220px;
+    margin:0 auto 22px;
+    line-height:1.35;
 }
