@@ -64,7 +64,7 @@ a{
 
 .information-grid{
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns: 0.9fr 1.1fr;
   gap:24px;
 }
 
@@ -629,7 +629,7 @@ img[src="assets/BREVO signup QR Code.png"] {
 
 @media (max-width: 600px) {
   .information-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-columns: 0.9fr 1.1fr; !important;
   }
 
   .information-grid > article {
