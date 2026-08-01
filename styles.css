@@ -711,4 +711,123 @@ img[src="assets/BREVO signup QR Code.png"] {
 .newsletter-card {
   grid-column: 2 !important;
   grid-row: 2 !important;
+}/* ---------- FINAL POLISH ---------- */
+
+/* Tighten overall spacing */
+.page-shell{
+    margin-top:18px !important;
+    margin-bottom:18px !important;
+}
+
+.card-column{
+    gap:10px !important;
+}
+
+/* Cards */
+.resource-card{
+    padding:18px !important;
+    border-radius:18px !important;
+}
+
+/* Headings */
+.resource-card h1,
+.resource-card h2{
+    margin-bottom:14px !important;
+    line-height:.95 !important;
+}
+
+.card-subtitle,
+.resource-card p,
+.resource-card address{
+    margin-bottom:16px !important;
+}
+
+/* Police badge */
+.police-badge{
+    max-height:165px !important;
+    margin-bottom:12px !important;
+}
+
+/* Community policing logo */
+.community-logo{
+    max-height:110px !important;
+    margin-bottom:10px !important;
+}
+
+/* Officer card */
+.officer-layout{
+    gap:12px !important;
+}
+
+.officer-name{
+    margin-top:8px !important;
+}
+
+.officer-button{
+    margin-top:16px !important;
+}
+
+/* Newsletter */
+.newsletter-divider{
+    margin:18px 0 !important;
+}
+
+.qr-code{
+    width:96px !important;
+}
+
+.signup-row{
+    gap:12px !important;
+}
+
+.signup-text{
+    font-size:.9rem !important;
+    line-height:1.35 !important;
+}
+
+/* Buttons */
+.action-button{
+    min-height:52px !important;
+    border-radius:14px !important;
+}
+
+.button-icon{
+    display:none !important;
+}
+
+/* Emergency section */
+.siren-symbol{
+    display:none !important;
+}
+
+.emergency-panel{
+    grid-template-columns:1fr !important;
+    gap:16px !important;
+    padding:24px !important;
+}
+
+.emergency-copy{
+    text-align:center;
+}
+
+.call-911-button{
+    justify-content:center !important;
+}
+
+.call-911-button span:first-child{
+    display:none !important;
+}
+
+/* Footer */
+.site-footer{
+    padding:20px 20px 22px !important;
+}
+
+.footer-heading{
+    margin-bottom:6px !important;
+}
+
+.footer-disclaimer{
+    margin-top:8px !important;
+    line-height:1.45 !important;
 }
