@@ -821,10 +821,6 @@ img[src="assets/BREVO signup QR Code.png"] {
     justify-content:center !important;
 }
 
-.call-911-button span:first-child{
-    display:none !important;
-}
-
 /* Footer */
 .site-footer{
     padding:20px 20px 22px !important;
