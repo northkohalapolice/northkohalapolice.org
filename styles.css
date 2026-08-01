@@ -851,4 +851,28 @@ img[src="assets/BREVO signup QR Code.png"] {
 .station-address .address-line {
   display: block !important;
   white-space: nowrap !important;
+}/* FINAL FOOTER OVERRIDE */
+
+body .site-footer {
+  padding: 14px 14px 16px !important;
+}
+
+body .site-footer .footer-heading {
+  font-size: 1.08rem !important;
+  line-height: 1.05 !important;
+  letter-spacing: 0.05em !important;
+  margin: 0 auto 6px !important;
+  max-width: 260px !important;
+}
+
+body .site-footer .footer-emergency {
+  font-size: 0.9rem !important;
+  margin: 5px 0 0 !important;
+}
+
+body .site-footer .footer-disclaimer {
+  font-size: 0.72rem !important;
+  line-height: 1.28 !important;
+  margin: 8px auto 0 !important;
+  max-width: 330px !important;
 }
