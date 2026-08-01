@@ -832,9 +832,11 @@ img[src="assets/BREVO signup QR Code.png"] {
     line-height:1.45 !important;
 }
 
-.station-address{
-    font-size: .95rem;
-    max-width:220px;
-    margin:0 auto 22px;
-    line-height:1.35;
+.station-address {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 18px;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    white-space: nowrap;
 }
