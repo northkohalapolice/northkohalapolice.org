@@ -5,14 +5,22 @@
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1"
   >
 
   <title>North Kohala Community Policing</title>
 
   <meta
     name="description"
-    content="North Kohala Community Policing information, emergency contacts, community resources, and newsletter access."
+    content="North Kohala Community Policing contact information, station directions, newsletter access, and community resources."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
   >
 
   <link rel="stylesheet" href="styles.css">
@@ -22,162 +30,178 @@
 
   <header class="site-header">
     <img
-      src="assets/Banner.jpeg"
-      alt="North Kohala Community Policing"
       class="banner"
+      src="assets/Banner.jpeg"
+      alt="North Kohala Community Policing banner"
     >
   </header>
 
-  <main>
 
-    <section class="hero">
-      <div class="hero-content">
+  <main class="page-shell">
 
-        <p class="eyebrow">
-          Serving Hāwī, Kapaʻau, and the Greater North Kohala Community
-        </p>
+    <section
+      class="information-grid"
+      aria-label="North Kohala Community Policing resources"
+    >
 
-        <h1>
-          North Kohala<br>
-          Community Policing
-        </h1>
+      <article class="resource-card non-emergency-card">
 
-        <p class="hero-text">
-          Community news, public-safety information, upcoming events,
-          and practical resources for North Kohala residents.
-        </p>
+        <div class="badge-column">
+          <img
+            class="police-badge"
+            src="assets/badge.png"
+            alt="Hawaiʻi Police Department badge"
+          >
+        </div>
 
-      </div>
-    </section>
+        <div class="card-content">
+          <h1>Non-Emergency</h1>
 
+          <p class="card-subtitle">
+            Police Dispatch
+          </p>
 
-    <section class="content-section">
-
-      <article class="card emergency-card">
-
-        <h2>
-          <span aria-hidden="true">🚨</span>
-          Emergency
-        </h2>
-
-        <p>
-          If you have an emergency requiring Police, Fire, or EMS,
-          dial 911 immediately.
-        </p>
-
-        <a
-          class="button emergency-button"
-          href="tel:911"
-        >
-          Call 911
-        </a>
+          <a
+            class="action-button navy-button"
+            href="tel:+18089353311"
+            aria-label="Call police dispatch at 808-935-3311"
+          >
+            <span class="button-icon" aria-hidden="true">☎</span>
+            <span>(808) 935-3311</span>
+          </a>
+        </div>
 
       </article>
 
 
-      <div class="card-grid">
+      <article class="resource-card station-card">
 
-        <article class="card">
+        <div class="card-content centered-content">
+          <h2>
+            North Kohala<br>
+            Police Station
+          </h2>
 
-          <img
-            src="assets/badge.png"
-            class="card-logo"
-            alt="Hawaiʻi Police Department badge"
-          >
-
-          <h2>Non-Emergency</h2>
-
-          <p>Police Dispatch</p>
-
-          <a
-            class="button"
-            href="tel:+18089353311"
-          >
-            (808) 935-3311
-          </a>
-
-        </article>
-
-
-        <article class="card">
-
-          <h2>North Kohala Police Station</h2>
-
-          <p>
+          <address>
             54-3900 Akoni Pule Highway<br>
             Kapaʻau, Hawaiʻi 96755
-          </p>
+          </address>
 
           <a
-            class="button"
+            class="action-button navy-button"
             href="https://maps.google.com/?q=54-3900+Akoni+Pule+Highway+Kapaau+HI+96755"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Get Directions
+            <span class="button-icon" aria-hidden="true">●</span>
+            <span>Get Directions</span>
           </a>
+        </div>
 
-        </article>
+      </article>
 
 
-        <article class="card newsletter-card">
+      <article class="resource-card newsletter-card">
 
-          <h2>Community Newsletter</h2>
+        <div class="card-content">
+          <h2>
+            Community<br>
+            Newsletter
+          </h2>
 
           <p>
             Read the latest North Kohala Community Policing newsletter.
           </p>
 
           <a
-            class="button gold-button"
+            class="action-button gold-button"
             href="https://canva.link/9jl9fqub5xuz5e1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Latest Newsletter
+            <span class="button-icon" aria-hidden="true">▣</span>
+            <span>View Our Newsletter</span>
           </a>
 
-          <div class="signup-area">
+          <div class="newsletter-divider"></div>
+
+          <div class="signup-row">
 
             <img
-              src="assets/BREVO signup QR Code.png"
               class="qr-code"
-              alt="QR code to join the North Kohala Community Policing email list"
+              src="assets/BREVO signup QR Code.png"
+              alt="QR code to join the North Kohala Community Policing newsletter email list"
             >
 
-            <p>
+            <p class="signup-text">
               Scan the QR code to join the newsletter email list.
             </p>
 
           </div>
+        </div>
 
-        </article>
+      </article>
 
 
-        <article class="card">
+      <article class="resource-card officer-card">
+
+        <div class="officer-layout">
 
           <img
+            class="community-logo"
             src="assets/CP LOGO.png"
-            class="card-logo community-logo"
             alt="Hawaiʻi Police Department Community Policing Section logo"
           >
 
-          <h2>Community Policing Officer</h2>
+          <div class="officer-copy">
+            <h2>
+              Community<br>
+              Policing Officer
+            </h2>
 
-          <p>
-            Officer Curry McFadden
-          </p>
+            <p class="officer-name">
+              Curry McFadden
+            </p>
+          </div>
 
-          <a
-            class="button"
-            href="mailto:curry.mcfadden@hawaiipolice.gov"
-          >
-            Email Officer McFadden
-          </a>
+        </div>
 
-        </article>
+        <a
+          class="action-button navy-button officer-button"
+          href="mailto:curry.mcfadden@hawaiipolice.gov"
+        >
+          <span class="button-icon" aria-hidden="true">✉</span>
+          <span>Email Curry McFadden</span>
+        </a>
 
+      </article>
+
+    </section>
+
+
+    <section class="emergency-panel" aria-labelledby="emergency-heading">
+
+      <div class="siren-symbol" aria-hidden="true">
+        🚨
       </div>
+
+      <div class="emergency-copy">
+        <h2 id="emergency-heading">Emergency</h2>
+
+        <p>
+          If you have an emergency requiring Police, Fire, or EMS,
+          dial 911 immediately.
+        </p>
+      </div>
+
+      <a
+        class="call-911-button"
+        href="tel:911"
+        aria-label="Call 911"
+      >
+        <span aria-hidden="true">☎</span>
+        <span>Call 911</span>
+      </a>
 
     </section>
 
@@ -186,7 +210,7 @@
 
   <footer class="site-footer">
 
-    <p class="footer-title">
+    <p class="footer-heading">
       North Kohala Community Policing
     </p>
 
@@ -198,9 +222,10 @@
       For emergencies, call 911.
     </p>
 
-    <p class="footer-small">
+    <p class="footer-disclaimer">
       This website provides community information and is not monitored
-      continuously. Do not use email or this website to report emergencies.
+      continuously.<br>
+      Do not use email or this website to report emergencies.
     </p>
 
   </footer>
