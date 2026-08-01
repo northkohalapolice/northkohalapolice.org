@@ -478,4 +478,176 @@ a.call-911-button:hover{
     width:92px;
   }
 
+}/* FINAL LAYOUT OVERRIDE */
+
+.page-shell {
+  width: min(1100px, calc(100% - 24px)) !important;
+  margin: 18px auto 24px !important;
+}
+
+.information-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+.information-grid > article {
+  min-height: 0 !important;
+  padding: 18px !important;
+  border: 1px solid rgba(23, 31, 68, 0.16) !important;
+  border-radius: 16px !important;
+  background: #fffdf8 !important;
+  box-shadow: 0 8px 22px rgba(10, 10, 27, 0.1) !important;
+  overflow: hidden !important;
+}
+
+.information-grid h1,
+.information-grid h2 {
+  font-size: clamp(1.55rem, 5vw, 2.4rem) !important;
+  line-height: 1 !important;
+  margin-bottom: 14px !important;
+}
+
+.information-grid p,
+.information-grid address {
+  font-size: clamp(0.88rem, 2.8vw, 1.05rem) !important;
+}
+
+/* Police badge */
+
+img[src="assets/badge.png"] {
+  width: 120px !important;
+  max-width: 100% !important;
+  height: 145px !important;
+  object-fit: contain !important;
+  margin: 0 auto 14px !important;
+}
+
+/* Community Policing logo */
+
+img[src="assets/CP LOGO.png"] {
+  width: 135px !important;
+  max-width: 100% !important;
+  height: 135px !important;
+  object-fit: contain !important;
+  margin: 0 auto 14px !important;
+}
+
+/* Newsletter QR code */
+
+img[src="assets/BREVO signup QR Code.png"] {
+  width: 115px !important;
+  max-width: 100% !important;
+  height: 115px !important;
+  object-fit: contain !important;
+  margin: 14px auto !important;
+}
+
+/* Turn every resource link into a button */
+
+.information-grid a[href^="tel:"],
+.information-grid a[href^="mailto:"],
+.information-grid a[href*="maps.google"],
+.information-grid a[href*="canva.link"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 48px !important;
+  margin-top: 14px !important;
+  padding: 10px 12px !important;
+  border-radius: 10px !important;
+  background: #171f44 !important;
+  color: #ffffff !important;
+  font-family: Arial, sans-serif !important;
+  font-size: clamp(0.82rem, 2.8vw, 1rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  text-transform: none !important;
+}
+
+/* Newsletter button in gold */
+
+.information-grid a[href*="canva.link"] {
+  background: #dfaf4f !important;
+  color: #071c3a !important;
+}
+
+/* Keep content centered within the smaller cards */
+
+.non-emergency-card,
+.station-card,
+.newsletter-card,
+.officer-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  text-align: center !important;
+}
+
+.badge-column,
+.officer-layout,
+.signup-row {
+  display: block !important;
+}
+
+/* Emergency panel remains full width at the bottom */
+
+.emergency-panel {
+  display: grid !important;
+  grid-template-columns: 52px minmax(0, 1fr) !important;
+  gap: 12px !important;
+  margin-top: 14px !important;
+  padding: 18px !important;
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, #c9181f, #a90f16) !important;
+  color: #ffffff !important;
+}
+
+.emergency-panel a[href="tel:911"] {
+  grid-column: 1 / -1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 54px !important;
+  padding: 12px !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  color: #a90f16 !important;
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+}
+
+.siren-symbol {
+  font-size: 2.4rem !important;
+}
+
+/* Prevent cards from becoming one wide column on phones */
+
+@media (max-width: 600px) {
+  .information-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .information-grid > article {
+    padding: 14px 10px !important;
+  }
+
+  img[src="assets/badge.png"] {
+    width: 100px !important;
+    height: 125px !important;
+  }
+
+  img[src="assets/CP LOGO.png"] {
+    width: 105px !important;
+    height: 105px !important;
+  }
+
+  img[src="assets/BREVO signup QR Code.png"] {
+    width: 95px !important;
+    height: 95px !important;
+  }
 }
