@@ -872,3 +872,25 @@ body .site-footer .footer-disclaimer {
   margin: 8px auto 0 !important;
   max-width: 330px !important;
 }
+/* OFFICIAL HPD FOOTER LINK */
+
+.footer-disclaimer {
+    margin: 8px auto 4px !important;
+    max-width: 330px !important;
+    font-size: 0.72rem !important;
+    line-height: 1.28 !important;
+}
+
+.footer-official-link {
+    margin: 4px auto 0 !important;
+    max-width: 430px !important;
+    font-size: 0.78rem !important;
+    line-height: 1.35 !important;
+}
+
+.footer-official-link a {
+    color: var(--gold) !important;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+}
